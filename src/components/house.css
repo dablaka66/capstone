@@ -1,0 +1,72 @@
+.house-header{
+    background-color: #000;
+    
+}
+
+.panel > .house-header{
+    background-color: #000;
+    text-decoration-line: underline;
+    size-adjust: 100%;
+    text-size-adjust: 90%;
+
+}
+.house-body{
+    display: flex;
+    flex-direction: row;
+    background-color: gold;
+    grid: auto / auto 25% auto;
+
+
+}
+.left-side{
+    width: 30%;
+    min-width: 30%;
+    border-radius: 10%;
+    border-color: rgb(39, 39, 38);
+    padding-inline: 2%;
+    text-align: justify;
+    
+}
+
+.center-side{
+    width: 90%;
+    min-width: 40%;
+    border-radius: 10%;
+    border-color: rgb(39, 39, 38);
+    padding-inline: 2%;
+    text-align: justify;
+    
+}
+
+.escudo{
+    perspective: 400px;
+    border-radius: 50%;
+    border-color: goldenrod;
+    margin: 3%;
+}
+
+.right-side{
+    display: flexbox;
+    width: 80%;
+    padding: 3cqw;
+    justify-content: center;
+    
+}
+
+.region{
+    width: 100%;
+    /* font-size: 1.5rem; */
+    /* padding-right: 0.5em;  */
+    
+    color: gold;
+    background-color: #000;
+    border-color: gold;
+    padding: 2%;
+
+    /* display: grid; */
+    place-content: center; 
+    box-shadow: 1em 2em 3em #000;
+}
+.image{
+    
+}

@@ -1,0 +1,29 @@
+.navigation
+{
+
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.nav_item
+{
+  font-size: 1.4rem;
+  margin: 0 2rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: #a63030;
+  border: 2px solid transparent;
+}
+
+.nav_item:hover
+{
+  color: #6cd265;
+}
+
+.nav_item_active
+{
+  border: 2px solid #ffffff;
+  background-color: green;
+}

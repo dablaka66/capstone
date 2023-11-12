@@ -1,0 +1,23 @@
+.contenedor{
+    background-color: blue;
+    padding: 100 rem;
+    overflow: hidden;
+}
+.izquierda{
+    float: left ;
+    padding: 2 rem;
+    color: #f5f5dc;
+    width: 25%;
+    margin: 2 rem;
+    background: gray ;
+
+}
+.derecha{
+    float: left ;
+    padding: 10 rem;
+    color: #f5f5dc;
+    width: 65%;
+    margin: 10 rem;
+    background: gray ;
+
+}
