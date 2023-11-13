@@ -56,4 +56,13 @@
     
     background-color: gold;
 
+
+}
+.big-title{
+    size-adjust: 100%;
+    object-fit: cover;
+    text-align: center;
+    text-decoration-style: wavy;
+    text-size-adjust: 100%;
+    background: image-set('../images/gifs/Intro-logo.gif');
 }
