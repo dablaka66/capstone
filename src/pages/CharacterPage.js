@@ -3,7 +3,7 @@ import getCharacters from "../services/getCharacters";
 import { json } from "react-router-dom";
 import CharactersComp from "../components/CharactersComp";
 import getIdCodeFromUrl from "../services/getIdCodeFromUrl";
-import pages from "./pages.css";
+import pages from "../css/pages.css";
 import ExpCharactersComp from "../components/ExpCharaterComp";
 import setId from "../services/SetId";
 
@@ -51,7 +51,7 @@ export default function CharacterPage() {
 
   return (
     <>
-      <div className="grid text-center container text-center flex gx-5">
+      <div className="contenedor">
         <div className="contenedor row">
           <div className="contenedor">
             <button
@@ -79,9 +79,9 @@ export default function CharacterPage() {
             <h6 className="">pag requested: {reqPage}</h6>
             <h6>page: {showPage}</h6>
           </div>
-          <div className="izquierda col container p-2 flex-shrink-1 g-col-4">
+          <div className="izquierda container p-2  ">
             <h3>Characters:</h3>
-            <div className="accordion accordion-flush">
+            <div className="">
               {characters.map((c) => {
                 let str = c.url;
 
@@ -90,7 +90,7 @@ export default function CharacterPage() {
 
                 return (
                   <>
-                    <ul className="list-group  li-item">
+                    <ul className=" li-item">
                       <li className="li-item" key={c.id}>
                         <CharactersComp
                           character={c}

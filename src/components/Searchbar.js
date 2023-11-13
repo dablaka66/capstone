@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-import Search from "./search.css";
+import Search from "../css/search.css";
 import { keyboard } from "@testing-library/user-event/dist/keyboard";
 
 export const Searchbar = ({ items, setSearchResult, val }) => {
@@ -27,7 +27,7 @@ export const Searchbar = ({ items, setSearchResult, val }) => {
   };
 
   return (
-    <div>
+    <div className="contenedor">
       <form className="search" onSubmit={handleSubmit}>
         <input
           className="search__input"

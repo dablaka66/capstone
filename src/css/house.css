@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: row;
     background-color: gold;
-    grid: auto / auto 25% auto;
+    /* grid: auto / auto 25% auto; */
 
 
 }
@@ -39,10 +39,20 @@
 }
 
 .escudo{
-    perspective: 400px;
+    /* perspective: 400px; */
+    display: flex;
     border-radius: 50%;
-    border-color: goldenrod;
+    border-color: rgba(39, 26, 28, 0.788);
+    /* border-style: dashed; */
     margin: 3%;
+    perspective: 500px;
+    
+    
+    background-color: black;
+    justify-content: center;
+    box-shadow: 50% black;
+    
+   
 }
 
 .right-side{
@@ -62,11 +72,19 @@
     background-color: #000;
     border-color: gold;
     padding: 2%;
+    
 
     /* display: grid; */
     place-content: center; 
     box-shadow: 1em 2em 3em #000;
 }
-.image{
+.esc-image{
+    display: flex;
+    padding: 5%;
+    padding-top: 25%;
+   /*  object-fit: cover; */
+    perspective: none;
+    perspective-origin: center center;
+    
     
 }

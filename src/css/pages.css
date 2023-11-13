@@ -1,0 +1,59 @@
+.contenedor{
+    background-color: gold;
+    padding: 2%;
+    overflow: hidden;
+}
+.izquierda{
+    float: left ;
+    padding: 1cap;
+    color: #f5f5dc;
+    width: 25%;
+    margin: 1 rem;
+    background: gold ;
+
+}
+.derecha{
+    float: left ;
+    padding: 10 rem;
+    color: #f2f2ef;
+    width:  70%;
+    margin: 10 rem;
+    background: black ;
+
+}
+.header{
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    size-adjust: 100%;
+}
+.logo{
+    padding: none;
+    max-width: 20%;
+    background-color: aliceblue;
+}
+.image-logo{
+    display: flex;
+    padding: 0%;
+    max-width: 100%;
+    
+}
+.main-bar{
+    display: inline;
+    padding: 10%;
+    max-width: 100%;
+    text-size-adjust: 100%;
+    size-adjust: 100%;
+    object-fit: cover;
+}
+.search{
+    display: flex;
+    padding: 1%;
+    max-width: 100%;
+    text-size-adjust: 100%;
+    size-adjust: 100%;
+    object-fit: cover;
+    
+    background-color: gold;
+
+}

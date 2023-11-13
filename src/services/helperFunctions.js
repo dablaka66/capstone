@@ -9,10 +9,12 @@ export function getLastSubString(texto) {
 }
 export function fileExists(path) {
   //const fs = require("fs");
+  //console.log("statSync(path).isFile()", statSync(path).isFile());
   try {
+    console.log("statSync(path).isFile()", statSync(path).isFile());
     return statSync(path).isFile();
   } catch (e) {
-    console.log("fileExiste() error", e);
+    console.log("fileExiste() Error", e);
 
     return false;
   }
@@ -33,4 +35,20 @@ export function hasRegion(region) {
       </div>
     );
   }
+}
+
+export function getEscImg(nameEsc) {
+  console.log("nameEsc: ", nameEsc);
+
+  let name = "";
+  if (!nameEsc) return "ESCNoavailable.png";
+  let f = nameEsc.split(" ");
+  if (nameEsc.length == 1) return "ESCNoavailable.png";
+  console.log("f: ", f);
+
+  for (let w = 1; w < f.length; w++) {
+    name = name + f[w];
+  }
+  console.log("esc file name", name);
+  return name;
 }

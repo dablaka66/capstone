@@ -1,0 +1,170 @@
+ .character{
+  display: flex;
+  flex-direction: column;
+  margin-top:1%;
+  padding: 2%;
+  border: none #ffffff;
+  background-color: gold;
+
+}
+.character-first-row{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.character-second-row{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.list-books{
+  display: flex;
+  flex-direction: row;
+}
+
+.list-box {
+  box-sizing: border-box;
+  padding: 0.3em;
+  margin: 1px;
+  background-color: black;
+  outline-offset: 1px;
+  text-align: left;
+  text-size-adjust: auto;
+
+}
+
+.character-image-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  min-width: 50%;
+  /* border: 4px dotted #ffffff; */
+}
+.character-info-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: text-top;
+  object-fit: cover;
+  min-width: 50%;
+  align-content: normal;
+  
+  cursor: pointer;
+  padding: 2%;
+  
+
+  /* border: 4px dotted #ffffff; */
+}
+
+.imagen {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding: 0.3em;
+  margin: 1px;
+  border: solid 2px gold;
+  outline: solid 4px rgb(25, 25, 26);
+  
+  outline-offset: 1px;
+}
+
+.logo {
+  display: flex;
+  height: 200%;
+  width: 100%;
+  padding: 0em;
+  margin: 0px;
+  border: solid 3px rgb(00, 0, 0);
+  
+  outline-offset: 1px;
+}
+
+.books {
+  display: flex;
+  width: 40%;
+  padding: 0.3em;
+  margin: 1px;
+  border: solid 2px rgb(00, 0, 0);
+  outline-offset: 1px;
+}
+
+/* .character__imageContainer:hover{
+  border-color: #6cd 
+} */
+
+
+
+.Character__image-default{
+  font-size: 0.4rem;
+}
+.li-item
+{
+  font-size: 0.3rem;
+  text-align: left;
+  background-color: black;
+  outline-offset: 0.1rem;
+  padding: 0;
+  margin: .7em;
+  text-decoration: none;
+  object-fit: cover;
+  border-style: solid ;
+  border-color: rgb(77, 53, 2);
+  
+  
+}
+
+/* .Character__infoContainer{
+  font-size: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 0.1;
+} */
+
+.infounit{
+  padding: 1rem;
+} 
+
+/* .Character__subinfoContainer{
+  font-size: 0.4rem;
+  display: flex;
+  
+  flex-grow: 1;
+  padding: 0.1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+.character-info{
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+  padding: 2%;
+  border-style: solid;
+  border-color: gold;
+  outline: 2%;
+  outline-color: black;
+  border: 2%;
+  width: 100%;
+  background-color: black;
+  
+  
+  /* border-style:dashed; */
+}
+
+.titles{
+  display: flex;
+  font-size: 100%;
+  text-align: right;
+  text-decoration: underline;
+  outline-offset: 5rem;
+  padding: 0rem;
+  margin: 0rem;
+  margin-bottom: 1rem;
+  
+  width: 100%;
+  object-fit: cover;
+}

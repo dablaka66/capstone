@@ -52,7 +52,7 @@ export default function SearchPage() {
 
   return (
     <>
-      <div>
+      <div className="contenedor">
         <h1>SearchPage</h1>
         <Searchbar
           items={items}
@@ -64,7 +64,7 @@ export default function SearchPage() {
           getSelectedCharacter={getSelectedCharacter}
         />
       </div>
-      <div>
+      <div className="contenedor">
         <h1>character:</h1>
         <ExpCharactersComp character={charSelected} />
       </div>

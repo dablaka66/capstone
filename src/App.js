@@ -9,9 +9,18 @@ function App() {
   return (
     <div className="container container-fluid">
       <Router>
+        <h1 className="badge text-bg-info">Capstone guided project </h1>
         <header>
-          <h1 className="badge text-bg-info">Capstone guided project </h1>
-          <MainNavBar />
+          <div className="header">
+            <div className="logo">
+              <img
+                src={require("../src/images/gifs/Intro-logo.gif")}
+                className="image-logo"
+                alt={"Game of Thrones}"}
+              />
+            </div>
+            <MainNavBar className="main-bar" />
+          </div>
         </header>
         <main>
           <AppRoute />

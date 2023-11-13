@@ -8,9 +8,9 @@ const initialHouse = {
 };
 
 export default function HousesPage() {
-  const [houses, setHouses] = useState([initialHouse]);
+  const [houses, setHouses] = useState([]); //I took out initialHouse to test
   const [page, setpage] = useState(1);
-  const [size, setsize] = useState(10);
+  const [size, setsize] = useState(20);
   /* const houses = () => {
     return getHouses(1, 10);
   }; */
@@ -28,6 +28,9 @@ export default function HousesPage() {
       console.log("newHouses: ", newHouses);
     });
   };
+  houses.map((h) => {
+    console.log("c", h);
+  });
   return (
     <div className="panel-group row">
       <h2>Houses:</h2>

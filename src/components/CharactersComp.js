@@ -1,4 +1,4 @@
-import "./character.css";
+import "../css/character.css";
 export default function CharactersComp({ character, showchar }) {
   const { id, name, aliases } = character;
   const mngClickcharacter = (c) => {

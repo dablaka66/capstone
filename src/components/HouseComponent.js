@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "./character.css";
-import "./house.css";
+import "../css/character.css";
+import "../css/house.css";
 import getIdCodeFromUrl from "../services/getIdCodeFromUrl";
 import getOneCharacter from "../services/getOneCharecter";
 import getNameOfCharacter from "../services/getNameOfCharacter";
@@ -9,6 +9,7 @@ import {
   getLastSubString,
   fileExists,
   hasRegion,
+  getEscImg,
 } from "../services/helperFunctions";
 
 export default function HouseComponent({ house }) {
@@ -30,6 +31,8 @@ export default function HouseComponent({ house }) {
     founder: "Serching",
     heir: "Serching",
   };
+
+  console.log("house ", typeof house);
 
   const [names, setNames] = useState(initialNames);
 
@@ -75,13 +78,13 @@ export default function HouseComponent({ house }) {
   }, []);
 
   let imageUrl;
-  imageUrl = "NO AVAILABLE.jpg";
+  imageUrl = "UNKNOWN.png";
   let EscUrl = "ESCNoAvailable.png";
 
   console.log("igetLastSubString(region); ", getLastSubString(region));
   imageUrl = getLastSubString(region).trim().toUpperCase() + ".jpg";
-  //EscUrl = getLastSubString(name).trim().toUpperCase() + ".png";
-  console.log("imageUrl: ", imageUrl);
+  EscUrl = "ESC" + getEscImg(name).trim() + ".png";
+  console.log("imageUrl: ", EscUrl);
 
   if (
     imageUrl == "PENDING.jpg" ||
@@ -90,7 +93,7 @@ export default function HouseComponent({ house }) {
   ) {
     imageUrl = "UNKNOWN.png";
   }
-  /* if (fileExists(charImg(`/${imageUrl}`))) {
+  /* if (fileExists(charImg(`./${imageUrl}`))) {
     console.log("fileExists: ", `hte file : ${charImg(`/${imageUrl}`)} existe`);
   } else {
     console.log(
@@ -98,7 +101,7 @@ export default function HouseComponent({ house }) {
       `hte file : ${charImg(`./${imageUrl}`)} no existe`
     );
   } */
-  /*  let setImagen = (imageUrl) => {
+  /*   let setImagen = (imageUrl) => {
     console.log(" entro imgUrl: ", imageUrl);
     if (fileExists(charImg(`./${imageUrl}`))) {
       console.log("existe", "siiii");
@@ -120,6 +123,7 @@ export default function HouseComponent({ house }) {
     }
   }; */
   //console.log("setImage", setImagen);
+  //imageUrl = "VALE.jpg";
   return (
     <div className="panel panel-primary text-bg-dark p-3  align-items-start">
       <div className="panel-heading house-header">
@@ -128,11 +132,13 @@ export default function HouseComponent({ house }) {
 
       <div className="panel-body house-body">
         <div className="left-side">
-          <img
-            src={charEsc(`./${EscUrl}`)}
-            className="imagen escudo"
-            alt={"${house.region}"}
-          />
+          <div className="escudo">
+            <img
+              src={charEsc(`./${EscUrl}`)}
+              className="esc-image"
+              alt={"${house.region}"}
+            />
+          </div>
         </div>
         <div className="center-side">
           <p>
