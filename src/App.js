@@ -19,7 +19,10 @@ function App() {
                 alt={"Game of Thrones}"}
               />
             </div>
-            <MainNavBar className="main-bar" />
+            <div className=" container">
+              {" "}
+              <MainNavBar />
+            </div>
           </div>
         </header>
         <main>

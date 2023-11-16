@@ -6,6 +6,7 @@ import getIdCodeFromUrl from "../services/getIdCodeFromUrl";
 import pages from "../css/pages.css";
 import ExpCharactersComp from "../components/ExpCharaterComp";
 import setId from "../services/SetId";
+import "../css/character.css";
 
 export default function CharacterPage() {
   const char = { name: "", born: "", died: "", alias: "", url: "" };
@@ -52,35 +53,22 @@ export default function CharacterPage() {
   return (
     <>
       <div className="contenedor">
-        <div className="contenedor row">
-          <div className="contenedor">
-            <button
-              type="button"
-              className="btn btn-primary"
-              onClick={mngBefore}
-            >
-              before
-            </button>
-            <button
-              type="button"
-              h
-              className="btn btn-primary"
-              onClick={mngNext}
-            >
-              Next
-            </button>
-            <button
-              type="button"
-              className="btn btn-primary"
-              onClick={mngGetMore}
-            >
-              get More
-            </button>
-            <h6 className="">pag requested: {reqPage}</h6>
-            <h6>page: {showPage}</h6>
-          </div>
-          <div className="izquierda container p-2  ">
-            <h3>Characters:</h3>
+        <div className="contenedor">
+          <div className="izquierda">
+            <div className="contenedor">
+              <button type="button" className="button" onClick={mngBefore}>
+                Before
+              </button>
+              <button type="button" h className=" button " onClick={mngNext}>
+                Next
+              </button>
+              <button type="button" className="button" onClick={mngGetMore}>
+                Get More
+              </button>
+              {/*  <h6 className="">pag requested: {reqPage}</h6>
+              <h6>page: {showPage}</h6> */}
+            </div>
+            <h3 className="sub-title">Characters:</h3>
             <div className="">
               {characters.map((c) => {
                 let str = c.url;
@@ -104,7 +92,7 @@ export default function CharacterPage() {
             </div>
           </div>
 
-          <div className=" derecha col container flex-shrink p-2  g-col-4">
+          <div className=" derecha contenedor ">
             <ExpCharactersComp character={charSelected} />
           </div>
         </div>

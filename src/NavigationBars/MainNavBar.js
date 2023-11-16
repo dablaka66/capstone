@@ -1,16 +1,16 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
+import "../css/NavegationBar.css";
 export default function MainNavBar() {
   return (
-    <nav className="navbar-inverse">
-      <ul className="navigation nav navbar-nav ">
-        <li className="nav_item">
+    <nav className="row">
+      <ul className="navbar-nav navbar-inverse navigation">
+        <li className="nav_item ">
           <NavLink to="/welcome" activeclassname="nav_item_active">
             Home Page
           </NavLink>
         </li>
-        <li className="nav_item">
+        <li className="nav_item ">
           {" "}
           <NavLink to="/Characters" activeclassname="nav_item_active">
             Characters

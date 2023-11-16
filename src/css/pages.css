@@ -5,10 +5,10 @@
 }
 .izquierda{
     float: left ;
-    padding: 1cap;
+    padding: 1%;
     color: #f5f5dc;
     width: 25%;
-    margin: 1 rem;
+    margin: 1% ;
     background: gold ;
 
 }
@@ -25,7 +25,8 @@
     padding: 1%;
     display: flex;
     flex-direction: row;
-    size-adjust: 100%;
+    size-adjust: 100%; 
+    object-fit: cover;
 }
 .logo{
     padding: none;
@@ -45,6 +46,7 @@
     text-size-adjust: 100%;
     size-adjust: 100%;
     object-fit: cover;
+    font-size: 70px;
 }
 .search{
     display: flex;
@@ -62,7 +64,44 @@
     size-adjust: 100%;
     object-fit: cover;
     text-align: center;
+    text-transform: uppercase;
     text-decoration-style: wavy;
     text-size-adjust: 100%;
-    background: image-set('../images/gifs/Intro-logo.gif');
+    font-size: 100px;
+    background-image: image-set('../images/gifs/Intro-logo.gif');
+    background-size: cover;
+    background-position-y: center;
+    padding: 0;
+    margin: 0;
+    font-weight: 900;
+    /* background-clip: text; */
+    color: transparent;
+}
+.sub-title{
+    size-adjust: 100%;
+    object-fit: cover;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration-style: wavy;
+    text-size-adjust: 100%;
+    font-size: 25px;
+    background-image: image-set('../images/gifs/Intro-logo.gif');
+    background-size: cover;
+    background-position-y: top;
+    background-position-x: right;
+    padding: 0;
+    margin: 0;
+    font-weight: 1000;
+    background-clip: text; 
+    color: rgb(46, 23, 1);
+    font-feature-settings:"blws";
+}
+.button{
+    background-color: black;
+    padding: 1%;
+    border-style: solid;
+    border-color: bisque;
+    border-radius: 20%;
+    font-size: 80% ;
+
 }

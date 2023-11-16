@@ -99,9 +99,8 @@
 .Character__image-default{
   font-size: 0.4rem;
 }
-.li-item
-{
-  font-size: 0.3rem;
+.li-item{
+  font-size: 50%;
   text-align: left;
   background-color: black;
   outline-offset: 0.1rem;
@@ -167,4 +166,8 @@
   
   width: 100%;
   object-fit: cover;
+}
+.btn-default {
+  background: #000;
+  color: #fff;
 }
