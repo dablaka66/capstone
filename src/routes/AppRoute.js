@@ -5,6 +5,7 @@ import CharacterPage from "../pages/CharacterPage";
 import HousesPage from "../pages/HousesPage";
 import SearchPage from "../pages/SearchPage";
 import QuizPage from "../pages/QuizPage";
+import "../css/app.css";
 
 export default function AppRoute() {
   return (

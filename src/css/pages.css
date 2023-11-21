@@ -2,7 +2,9 @@
     background-color: gold;
     padding: 2%;
     overflow: hidden;
+    height: 100%;
 }
+
 .izquierda{
     float: left ;
     padding: 1%;
@@ -10,6 +12,7 @@
     width: 25%;
     margin: 1% ;
     background: gold ;
+    max-height: 70%;
 
 }
 .derecha{
@@ -22,11 +25,13 @@
 
 }
 .header{
-    padding: 1%;
+    padding: 0%;
     display: flex;
     flex-direction: row;
     size-adjust: 100%; 
     object-fit: cover;
+    background-image: -moz-linear-gradient('../images/gifs/Intro-logo.gif');
+    
 }
 .logo{
     padding: none;
@@ -104,4 +109,38 @@
     border-radius: 20%;
     font-size: 80% ;
 
+}
+.page{
+    max-height: 50%;
+}
+.black-p{
+    color: black;
+}
+.p3{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    font-size: 0.5rem;
+    padding: 2%;
+    justify-content: left;
+    min-width: 100%; 
+    /* align-items: center; */
+    text-align: left;
+    text-wrap: balance;
+    /* object-fit: fill; */
+}
+p2{
+    font-size: 0.7rem;
+    padding: 2%;
+    text-align: left;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+}
+p1{
+    font-size: 1rem;
+    padding: 1%;
+    margin: 5%;
+    text-align: left;
+    text-wrap: balance;
 }

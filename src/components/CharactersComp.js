@@ -8,10 +8,10 @@ export default function CharactersComp({ character, showchar }) {
     <div
       style={{ backgroundColor: "black" }}
       onClick={mngClickcharacter}
-      className=" active list-box "
+      className=" item-active li-item"
       id={id}
     >
-      <h5>{`${id}. ${name} ( ${aliases})`}</h5>
+      <p className="p3">{`${id}. ${name} ( ${aliases})`}</p>
     </div>
   );
 }

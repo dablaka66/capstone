@@ -3,7 +3,7 @@ import getCharacters from "../services/getCharacters";
 import { json } from "react-router-dom";
 import CharactersComp from "../components/CharactersComp";
 import getIdCodeFromUrl from "../services/getIdCodeFromUrl";
-import pages from "../css/pages.css";
+import "../css/pages.css";
 import ExpCharactersComp from "../components/ExpCharaterComp";
 import setId from "../services/SetId";
 import "../css/character.css";
@@ -69,7 +69,7 @@ export default function CharacterPage() {
               <h6>page: {showPage}</h6> */}
             </div>
             <h3 className="sub-title">Characters:</h3>
-            <div className="">
+            <div className="list-box">
               {characters.map((c) => {
                 let str = c.url;
 
@@ -78,14 +78,7 @@ export default function CharacterPage() {
 
                 return (
                   <>
-                    <ul className=" li-item">
-                      <li className="li-item" key={c.id}>
-                        <CharactersComp
-                          character={c}
-                          showchar={showCharacter}
-                        />
-                      </li>
-                    </ul>
+                    <CharactersComp character={c} showchar={showCharacter} />
                   </>
                 );
               })}

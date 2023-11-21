@@ -39,29 +39,29 @@ export default function ExpCharactersComp({ character }) {
               />
             </div>
             <div className="card-body">
-              <h5 className="card-title text-bg-primary ">{`${name}`}</h5>
-              <p className="card-text">Play by {playedBy}</p>
+              <div className="text-bg-primary p1 ">{`${name}`}</div>
+              <div className="p2">Play by {playedBy}</div>
             </div>
           </div>
           <div className="character-info-container">
             <div className="character-info">
-              <h1>{`${name}`}</h1>
-              <h3>{`${born}-${died}`}</h3>
-              <h3>{`(${aliases})`}</h3>
-              <h3>{` ${culture} `}</h3>
+              <div className="P1">{`${name}`}</div>
+              <div clasName="p2">{`${born}-${died}`}</div>
+              <div clasName="p2">{`(${aliases})`}</div>
+              <div clasName="p2">{` ${culture} `}</div>
             </div>
             <div className="character-info">
               <div>
                 <div className="titles">
-                  <h3 className="titles">
+                  <div className="titles">
                     {titles.length !== 0 ? "Titles:" : "No titles found"}
-                  </h3>
+                  </div>
                 </div>
                 <ul className="">
                   {titles.map((t) => {
                     return (
                       <li className="">
-                        <h3>{`${t}`}</h3>
+                        <div className="p3">{`${t}`}</div>
                       </li>
                     );
                   })}

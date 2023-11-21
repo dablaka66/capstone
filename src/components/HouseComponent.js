@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "../css/character.css";
 import "../css/house.css";
+import "../css/pages.css";
+
 import getIdCodeFromUrl from "../services/getIdCodeFromUrl";
 import getOneCharacter from "../services/getOneCharecter";
 import getNameOfCharacter from "../services/getNameOfCharacter";
@@ -141,42 +143,42 @@ export default function HouseComponent({ house }) {
           </div>
         </div>
         <div className="center-side">
-          <p>
-            <b>Region: </b>
-            {region}
-          </p>
-          <p>
-            <b>Words: </b>
-            {words}
-          </p>
-          <p>
-            <b>Coat Of Arms:</b>
-            {coatOfArms}
-          </p>
-          <p>
-            <b>Current Lord: </b>
-            {names.lord}
-          </p>
-          <p>
-            <b>Heir: </b>
-            {names.heir}
-          </p>
-          <p>
-            <b>Founded: </b>
-            {founded}
-          </p>
-          <p>
-            <b>Founder: </b>
-            {name.founder}
-          </p>
-          <p>
-            <b>DiedOut: </b>
-            {diedOut}
-          </p>
+          <p2 className=" black-p">
+            <b className=" black-p">Region: </b>
+            {region} <br />
+          </p2>
+          <p2 className=" black-p">
+            <b className=" black-p">Words: </b>
+            {words} <br />
+          </p2>
+          <p2 className=" black-p">
+            <b className=" black-p">Coat Of Arms:</b>
+            {coatOfArms} <br />
+          </p2>
+          <p2 className=" black-p">
+            <b className=" black-p">Current Lord: </b>
+            {names.lord} <br />
+          </p2>
+          <p2 className=" black-p">
+            <b className=" black-p">Heir: </b>
+            {names.heir} <br />
+          </p2>
+          <p2 className=" black-p">
+            <b className=" black-p">Founded: </b>
+            {founded} <br />
+          </p2>
+          <p2 className=" black-p">
+            <b className=" black-p">Founder: </b>
+            {name.founder} <br />
+          </p2>
+          <p2 className=" black-p">
+            <b className=" black-p">DiedOut: </b>
+            {diedOut} <br />
+          </p2>
         </div>
         <div className="right-side">
           <div>
-            <h4>imagen</h4>
+            <p2 className=" black-p">Location:</p2>
           </div>
           <div className="image region">
             <img

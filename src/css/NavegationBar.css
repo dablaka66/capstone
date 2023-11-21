@@ -1,5 +1,5 @@
-.navigation
-{
+.navegation{
+
 
   display: flex;
   flex-direction: row;
@@ -11,6 +11,11 @@
 
 .nav_item {
   margin-right: 10px;
+  text-decoration: none;
+}
+.li {
+  text-decoration:none;
+  list-style: none;
 }
 
 .nav_item_1
@@ -33,9 +38,19 @@
   border: 2px solid #ffffff;
   background-color: green;
 }
-.nav_bar
+/* .nav_bar
 {
   display: flex;
   flex-direction: row;
   align-items: center;
+} */
+.contenedor-menu{
+  background-color: rgb(0, 0, 0);
+  padding: 1%;
+  overflow: hidden;
+  object-fit: cover;
+  size-adjust: 100%;
+  justify-content: right;
+  border-radius:  0px 0px 600px 0px;
+
 }

@@ -1,0 +1,31 @@
+*{margin: 0;
+padding: 0  ;
+box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+
+body{
+    height: 100vh;
+    border: 5px dashed red;
+}
+root{
+    margin: 0;
+    padding: 0  ;
+    box-sizing: border-box;
+}
+.home-imagen {
+    box-sizing: border-box;
+    height: 40%;
+    width: 30%;
+    padding: 0.3em;
+    margin: 1px;
+    border: solid 2px gold;
+    outline: solid 4px rgb(25, 25, 26);
+    outline-offset: 1px;
+  }
+  .home-news{
+    display: flex;
+    flex-direction: row;
+  }
